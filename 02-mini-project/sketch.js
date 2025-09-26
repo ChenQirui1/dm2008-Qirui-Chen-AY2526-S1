@@ -32,48 +32,72 @@ let currentCat = 0;
 /* ----------------- Setup & Draw ----------------- */
 
 function preload() {
-  arcadeFont = loadFont("assets/font/KarmaticArcade.ttf");
-  bodyFont = loadFont("assets/font/PressStart.ttf");
+  arcadeFont = loadFont("/assets/font/KarmaticArcade.ttf");
+  bodyFont = loadFont("/assets/font/PressStart.ttf");
 
   //insert assets
 
   bg = loadImage("/assets/sky/sky.png", COVER);
 
-  rock1 = loadImage("/assets/rock/space rock_01.png");
-  rock2 = loadImage("/assets/rock/space rock_02.png");
+  rock1 = loadImage("/assets/rock/space-rock-01.png");
+  rock2 = loadImage("/assets/rock/space-rock-02.png");
 
   // rock1Rotated = loadImage("/assets/space rock_01 - rotated.png");
-  rock2Rotated = loadImage("/assets/rock/space rock_02 - rotated.png");
+  rock2Rotated = loadImage("/assets/rock/space-rock-02-rotated.png");
 
   //cat1
   cat1 = [
-    loadImage("/assets/cat/cat 1_end.png"),
-    loadImage("/assets/cat/cat 1_start.png"),
+    loadImage("/assets/cat/cat-1-end.png"),
+    loadImage("/assets/cat/cat-1-start.png"),
   ];
-
   cat2 = [
-    loadImage("/assets/cat/cat 2_end.png"),
-    loadImage("/assets/cat/cat 2_start.png"),
+    loadImage("/assets/cat/cat-2-end.png"),
+    loadImage("/assets/cat/cat-2-start.png"),
   ];
 
   cat3 = [
-    loadImage("/assets/cat/cat 3_end.png"),
-    loadImage("/assets/cat/cat 3_start.png"),
+    loadImage("/assets/cat/cat-3-end.png"),
+    loadImage("/assets/cat/cat-3-start.png"),
   ];
 
   cat4 = [
-    loadImage("/assets/cat/cat 4_end.png"),
-    loadImage("/assets/cat/cat 4_start.png"),
+    loadImage("/assets/cat/cat-4-end.png"),
+    loadImage("/assets/cat/cat-4-start.png"),
   ];
 
   cat5 = [
-    loadImage("/assets/cat/cat 5_end.png"),
-    loadImage("/assets/cat/cat 5_start.png"),
+    loadImage("/assets/cat/cat-5-end.png"),
+    loadImage("/assets/cat/cat-5-start.png"),
+  ];
+
+  cat6 = [
+    loadImage("/assets/cat/cat-6-end.png"),
+    loadImage("/assets/cat/cat-6-start.png"),
+  ];
+
+  cat7 = [
+    loadImage("/assets/cat/cat-7-end.png"),
+    loadImage("/assets/cat/cat-7-start.png"),
+  ];
+
+  cat8 = [
+    loadImage("/assets/cat/cat-8-end.png"),
+    loadImage("/assets/cat/cat-8-start.png"),
+  ];
+
+  cat9 = [
+    loadImage("/assets/cat/cat-9-end.png"),
+    loadImage("/assets/cat/cat-9-start.png"),
+  ];
+
+  cat10 = [
+    loadImage("/assets/cat/cat-10-end.png"),
+    loadImage("/assets/cat/cat-10-start.png"),
   ];
 
   // cat2 = [cat2Fall, cat2Jump];
 
-  cats = [cat1, cat2, cat3, cat4, cat5];
+  cats = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10];
 
   // rock.resize(10, 0);
 }
@@ -174,9 +198,14 @@ function gameOver() {
   //cat change menu
   image(cats[0][0], width / 2, 400);
 
-  button = createButton("change cat", "red");
-  button.size(200, 50);
-  button.position(width / 2 - 100, 500);
+  button = createButton("change cat");
+  button.size(130, 40);
+  button.position(width / 2 - 65, 500);
+  button.style("background-color", "#a04c82");
+  button.style("border-radius", "10px");
+  button.style("color", "white");
+  button.style("font-size", "15px");
+
   button.mousePressed(() => {
     if (currentCat < cats.length - 1) {
       currentCat += 1;

@@ -32,67 +32,69 @@ let currentCat = 0;
 /* ----------------- Setup & Draw ----------------- */
 
 function preload() {
-  arcadeFont = loadFont("/assets/font/KarmaticArcade.ttf");
-  bodyFont = loadFont("/assets/font/PressStart.ttf");
+  arcadeFont = loadFont("/02-mini-project/assets/font/KarmaticArcade.ttf");
+  bodyFont = loadFont("/02-mini-project/assets/font/PressStart.ttf");
 
   //insert assets
 
-  bg = loadImage("/assets/sky/sky.png", COVER);
+  bg = loadImage("/02-mini-project/assets/sky/sky.png", COVER);
 
-  rock1 = loadImage("/assets/rock/space-rock-01.png");
-  rock2 = loadImage("/assets/rock/space-rock-02.png");
+  rock1 = loadImage("/02-mini-project/assets/rock/space-rock-01.png");
+  rock2 = loadImage("/02-mini-project/assets/rock/space-rock-02.png");
 
-  // rock1Rotated = loadImage("/assets/space rock_01 - rotated.png");
-  rock2Rotated = loadImage("/assets/rock/space-rock-02-rotated.png");
+  // rock1Rotated = loadImage("/02-mini-project/assets/space rock_01 - rotated.png");
+  rock2Rotated = loadImage(
+    "/02-mini-project/assets/rock/space-rock-02-rotated.png"
+  );
 
   //cat1
   cat1 = [
-    loadImage("/assets/cat/cat-1-end.png"),
-    loadImage("/assets/cat/cat-1-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-1-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-1-start.png"),
   ];
   cat2 = [
-    loadImage("/assets/cat/cat-2-end.png"),
-    loadImage("/assets/cat/cat-2-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-2-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-2-start.png"),
   ];
 
   cat3 = [
-    loadImage("/assets/cat/cat-3-end.png"),
-    loadImage("/assets/cat/cat-3-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-3-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-3-start.png"),
   ];
 
   cat4 = [
-    loadImage("/assets/cat/cat-4-end.png"),
-    loadImage("/assets/cat/cat-4-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-4-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-4-start.png"),
   ];
 
   cat5 = [
-    loadImage("/assets/cat/cat-5-end.png"),
-    loadImage("/assets/cat/cat-5-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-5-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-5-start.png"),
   ];
 
   cat6 = [
-    loadImage("/assets/cat/cat-6-end.png"),
-    loadImage("/assets/cat/cat-6-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-6-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-6-start.png"),
   ];
 
   cat7 = [
-    loadImage("/assets/cat/cat-7-end.png"),
-    loadImage("/assets/cat/cat-7-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-7-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-7-start.png"),
   ];
 
   cat8 = [
-    loadImage("/assets/cat/cat-8-end.png"),
-    loadImage("/assets/cat/cat-8-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-8-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-8-start.png"),
   ];
 
   cat9 = [
-    loadImage("/assets/cat/cat-9-end.png"),
-    loadImage("/assets/cat/cat-9-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-9-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-9-start.png"),
   ];
 
   cat10 = [
-    loadImage("/assets/cat/cat-10-end.png"),
-    loadImage("/assets/cat/cat-10-start.png"),
+    loadImage("/02-mini-project/assets/cat/cat-10-end.png"),
+    loadImage("/02-mini-project/assets/cat/cat-10-start.png"),
   ];
 
   // cat2 = [cat2Fall, cat2Jump];

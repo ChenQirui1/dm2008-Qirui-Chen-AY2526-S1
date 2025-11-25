@@ -205,3 +205,15 @@ class Shape {
 //     }
 //   }
 // }
+
+function keyPressed() {
+  if (key === 's' || key === 'S') {
+    // Save animated GIF (5 seconds)
+    console.log('Recording GIF...');
+    saveGif('activity10-grid', 5);
+  }
+  if (key === 'p' || key === 'P') {
+    // Save static image
+    saveCanvas('activity10-grid', 'jpg');
+  }
+}

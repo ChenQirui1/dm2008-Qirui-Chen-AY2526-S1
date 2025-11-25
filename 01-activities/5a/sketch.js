@@ -86,3 +86,15 @@ class Ball {
   }
   // Use dist() and respond visually
 }
+
+function keyPressed() {
+  if (key === 's' || key === 'S') {
+    // Save animated GIF (5 seconds)
+    console.log('Recording GIF...');
+    saveGif('activity5a-collisions', 5);
+  }
+  if (key === 'p' || key === 'P') {
+    // Save static image
+    saveCanvas('activity5a-collisions', 'jpg');
+  }
+}

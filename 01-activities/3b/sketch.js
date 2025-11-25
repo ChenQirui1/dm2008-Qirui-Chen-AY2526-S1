@@ -65,6 +65,18 @@ function pillar(offsetX, offsetY, sizeSmall, sizeLarge, rotation) {
   }
 }
 
+function keyPressed() {
+  if (key == 's' || key == 'S') {
+    // Save animated GIF (5 seconds)
+    console.log('Recording GIF...');
+    saveGif('activity3b', 5);
+  }
+  if (key == 'p' || key == 'P') {
+    // Save static image
+    saveCanvas('activity3b-image', 'jpg');
+  }
+}
+
 // Example starter function:
 // function myShape(x, y, s) {
 //   ellipse(x, y, s, s);

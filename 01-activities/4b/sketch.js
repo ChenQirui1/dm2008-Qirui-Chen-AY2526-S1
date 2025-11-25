@@ -72,6 +72,15 @@ function keyPressed() {
     // clear all agents
     agents = [];
   }
+  if (key === "s" || key === "S") {
+    // Save animated GIF (5 seconds)
+    console.log('Recording GIF...');
+    saveGif('activity4b-agents', 5);
+  }
+  if (key === "p" || key === "P") {
+    // Save static image
+    saveCanvas('activity4b-agents', 'jpg');
+  }
 }
 
 // ============================

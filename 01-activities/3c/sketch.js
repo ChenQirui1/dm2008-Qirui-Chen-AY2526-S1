@@ -123,6 +123,15 @@ function keyPressed() {
     fill(240);
     rect(mouseX, mouseY, 200, 200); // clear canvas
   }
+  if (key == "S" || key == "s") {
+    // Save static image
+    saveCanvas('activity3c-painting', 'jpg');
+  }
+  if (key == "G" || key == "g") {
+    // Save animated GIF (5 seconds)
+    console.log('Recording GIF...');
+    saveGif('activity3c-painting', 5);
+  }
 
   // TODO: add an 'E' (eraser) mode by painting with background color
   // e.g., if eraserMode, use color(240) instead of palette[colorIndex]
